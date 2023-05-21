@@ -1,11 +1,13 @@
 {
+  "homepage": "http://hristowwe.github.io/Docs",
   "name": "website",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "predeploy": "npm run build",
+    "build": "gh-pages -d build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -21,6 +23,7 @@
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "^2.1.14",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
